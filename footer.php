@@ -2,7 +2,7 @@
 </div>
 <footer id="footer" role="contentinfo">
 <div id="copyright">
-<?php echo sprintf( __( '%1$s %2$s %3$s. All Rights Reserved.', 'blankslate' ), '&copy;', date( 'Y' ), esc_html( get_bloginfo( 'name' ) ) ); echo sprintf( __( ' Theme By: %1$s.', 'blankslate' ), '<a href="http://tidythemes.com/">TidyThemes</a>' ); ?>
+	<h6>&copy <?php echo date('Y'); ?> <?php echo bloginfo( 'name' ); ?> |  All rights reserved  |  <a href='http://www.stephencwright.co.uk/echoes-clean-minimalist-theme-for-wordpress'>Echoes theme by Stephen Wright</a></h6>
 </div>
 </footer>
 </div>

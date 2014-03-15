@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width" />
 		<title><?php wp_title( ' | ', true, 'right' ); ?></title>
 		<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
+		<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
@@ -12,12 +13,21 @@
 			<header id="header" role="banner">
 				<section id="branding">
 					<div id="site-title">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src='wp-content/themes/Echoes/heading.png' width='500px' height='160px' /></a>
+						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					</div>
 					<!--<div id="site-description"><?php bloginfo( 'description' ); ?></div>-->
 				</section>
 				<div id="menu">
 					<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'container_class' => 'theme-navigation', 'menu_class' => 'top-menu' ) ); ?>
 				</div>
+				<div class='social-nav'>
+					<a class='soc-button' href='http://www.instagram.com/victoriaemilywr'><i class='fa fa-instagram'></i></a>
+					<a class='soc-button' href='http://victoriaemilywr.tumblr.com'><i class='fa fa-tumblr'></i></a>
+					<a class='soc-button' href='http://www.pinterest.com/victoriaemilywr'><i class='fa fa-pinterest'></i></a>
+					<a class='soc-button' href='https://www.bloglovin.com/blog/11774411/'><i class='fa fa-heart'></i></a>
+					<a class='soc-button' href='http://www.google.com/plus/USER'><i class='fa fa-google-plus'></i></a>
+					<a class='soc-button' href="<?php echo esc_url( home_url( '/feed' ) ); ?>"><i class='fa fa-rss'></i></a>
+				</div>
+				<div class='nav-separator'></div>
 			</header>
 			<div id="container">

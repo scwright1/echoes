@@ -23,6 +23,16 @@ body {
 	text-align: center;
 }
 
+#site-title > h1 > a {
+	font-size: 90px;
+	line-height: 160px;
+	font-weight: 100;
+	font-family: "Alegreya Sans SC", sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: @col-black;
+}
+
 .top-menu {
 	list-style: none;
 }
@@ -45,21 +55,94 @@ body {
 	float: left;
 	padding-top: 2px;
 	line-height: 35px;
-	border: 2px solid @col-dgrey;
+	border: 2px solid @col-black;
 	width: 150px;
 	margin: 0 10px;
 	border-radius: 20px;
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 16px;
-	color: @col-dgrey;
+	color: @col-black;
 	transition: border-color 0.5s ease, color 0.5s ease;
 	text-decoration: none;
 }
 
 .theme-navigation > ul > li > a:hover {
-	color: @col-black;
-	border: 2px solid @col-black;
+	color: @col-mint;
+	border: 2px solid @col-mint;
 	transition: border-color 0.5s ease, color 0.5s ease;
 	text-decoration: none;
+}
+
+.social-nav {
+	margin-top: 20px;
+	height: 40px;
+}
+
+.social-nav > .soc-button {
+	margin: 0 5px;
+	border-radius: 20px;
+	background: @col-black;
+	font-size: 18px;
+	line-height: 38px;
+	transition: background-color 0.5s ease, color 0.5s ease;
+	color: @col-smoke;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	line-height: 44px;
+}
+
+.social-nav > .soc-button:hover {
+	background: @col-mint;
+	//color: @col-black;
+	transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.nav-separator {
+	margin-top: 39px;
+	border-bottom: 1px solid @col-lgrey;
+}
+
+/**
+ * Content
+ */
+
+#content > article > header > h2 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 600;
+	padding-top: 30px;
+	line-height: 20px;
+}
+
+#content > article > header > h2 > a {
+	text-decoration: none;
+	color: @col-black;
+}
+
+#content > article > header > .entry-meta {
+	text-align: center;
+	color: @col-dgrey;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 20px;
+	padding-bottom: 30px;
+}
+
+/**
+ * Footer
+ */
+#copyright > h6 {
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 300;
+	text-align: center;
+	color: @col-dgrey;
+}
+
+#copyright > h6 > a {
+	text-decoration: none;
+	color: @col-dgrey;
 }
