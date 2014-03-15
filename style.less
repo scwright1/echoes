@@ -1,0 +1,65 @@
+@import "definitions";
+
+body {
+	background: @col-smoke;
+	font-family: 'Alegreya Sans', sans-serif;
+	font-weight: normal;
+}
+
+@media all and (max-width: 960px) {
+	#wrapper {
+		width: 100%;
+	}
+}
+
+@media all and (min-width: 961px) {
+	#wrapper {
+		margin: 0px auto;
+		max-width: 960px;
+	}
+}
+
+#header {
+	text-align: center;
+}
+
+.top-menu {
+	list-style: none;
+}
+
+.theme-navigation {
+	height: 40px;
+	text-align: center;
+}
+
+.theme-navigation > ul {
+	margin: 0;
+	padding: 0;
+}
+
+.theme-navigation > ul > li {
+	display: inline-block;
+}
+
+.theme-navigation > ul > li > a {
+	float: left;
+	padding-top: 2px;
+	line-height: 35px;
+	border: 2px solid @col-dgrey;
+	width: 150px;
+	margin: 0 10px;
+	border-radius: 20px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+	color: @col-dgrey;
+	transition: border-color 0.5s ease, color 0.5s ease;
+	text-decoration: none;
+}
+
+.theme-navigation > ul > li > a:hover {
+	color: @col-black;
+	border: 2px solid @col-black;
+	transition: border-color 0.5s ease, color 0.5s ease;
+	text-decoration: none;
+}
