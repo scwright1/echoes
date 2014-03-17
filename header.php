@@ -21,10 +21,10 @@
 					<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'container_class' => 'theme-navigation', 'menu_class' => 'top-menu' ) ); ?>
 				</div>
 				<div class='social-nav'>
-					<a class='soc-button' href='http://www.instagram.com/victoriaemilywr'><i class='fa fa-instagram'></i></a>
-					<a class='soc-button' href='http://victoriaemilywr.tumblr.com'><i class='fa fa-tumblr'></i></a>
-					<a class='soc-button' href='http://www.pinterest.com/victoriaemilywr'><i class='fa fa-pinterest'></i></a>
-					<a class='soc-button' href='https://www.bloglovin.com/blog/11774411/'><i class='fa fa-heart'></i></a>
+					<a class='soc-button' href='http://www.instagram.com/USER'><i class='fa fa-instagram'></i></a>
+					<a class='soc-button' href='http://USER.tumblr.com'><i class='fa fa-tumblr'></i></a>
+					<a class='soc-button' href='http://www.pinterest.com/USER'><i class='fa fa-pinterest'></i></a>
+					<a class='soc-button' href='https://www.bloglovin.com/blog/USER/'><i class='fa fa-heart'></i></a>
 					<a class='soc-button' href='http://www.google.com/plus/USER'><i class='fa fa-google-plus'></i></a>
 					<a class='soc-button' href="<?php echo esc_url( home_url( '/feed' ) ); ?>"><i class='fa fa-rss'></i></a>
 				</div>
