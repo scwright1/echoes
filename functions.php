@@ -4,6 +4,11 @@ if ( function_exists('add_theme_support') ) {
     add_theme_support('post-thumbnails');
 }
 
+function register_main_menu() {
+  register_nav_menu('main-menu',__( 'Navbar' ));
+}
+add_action( 'init', 'register_main_menu' );
+
 function filter_ptags_on_images($content){
 return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(\/a>)?\s*<\/p>/iU', '\1\2\3', $content);
 }
