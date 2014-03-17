@@ -9,6 +9,11 @@ function register_main_menu() {
 }
 add_action( 'init', 'register_main_menu' );
 
+function register_drop_menu() {
+  register_nav_menu('drop-menu',__( 'Dropdown' ));
+}
+add_action( 'init', 'register_drop_menu' );
+
 function filter_ptags_on_images($content){
 return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(\/a>)?\s*<\/p>/iU', '\1\2\3', $content);
 }
