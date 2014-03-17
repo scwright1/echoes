@@ -7,5 +7,6 @@
 </footer>
 </div>
 <?php wp_footer(); ?>
+<script type='text/javascript' src="<?php bloginfo('template_url'); ?>/functions.js"></script>
 </body>
 </html>
