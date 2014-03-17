@@ -140,7 +140,25 @@ p img {
 	font-size: 28px;
 }
 
+#content > article > header > h1 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 600;
+	padding-top: 30px;
+	line-height: 20px;
+	margin: 0;
+	font-family: "Alegreya Sans SC", sans-serif;
+	font-weight: 300;
+	font-size: 28px;
+}
+
 #content > article > header > h2 > a {
+	text-decoration: none;
+	color: @col-black;
+}
+
+#content > article > header > h1 > a {
 	text-decoration: none;
 	color: @col-black;
 }
@@ -166,12 +184,36 @@ p img {
 	text-decoration: none;
 }
 
+.entry-summary > p > a {
+	color: @col-black;
+	transition: color 0.5s ease;
+}
+
+.entry-summary > p > a:hover {
+	color: @col-mint;
+	transition: color 0.5s ease;
+}
+
+.entry-title > a {
+	color: @col-black;
+	text-align: center;
+}
+
 /**
  * Nav-below
  */
 
 #nav-below {
 	padding-top: 10px;
+	padding-bottom: 40px;
+}
+
+#nav-below > .nav-previous {
+	float: left;
+}
+
+#nav-below > .nav-next {
+	float: right;
 }
 
 #nav-below > .nav-previous > a {
@@ -224,6 +266,52 @@ p img {
 	font-size: 32px;
 	text-align: center;
 	margin: 14px;
+}
+
+.sidebar > .user-panel {
+	width: 100%;
+	height: 200px;
+}
+
+.sidebar > aside {
+	margin-top: 100px;
+	text-align: right;
+	margin-right: 10px;
+	display: none;
+}
+
+.widget-title {
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.textwidget > p {
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.cat-item {
+	list-style: none;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+a {
+	color: @col-smoke;
+	text-decoration: none;
+	transition: color 0.5s ease;
+}
+
+a:hover {
+	color: @col-mint;
+	transition: color 0.5s ease;
+}
+
+.xoxo > div > ul > li {
+	list-style: none;
+	text-transform: uppercase;
+	font-size: 14px;
 }
 
 /**

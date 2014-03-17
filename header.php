@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 		<meta name="viewport" content="width=device-width" />
-		<title><?php wp_title( ' | ', true, 'right' ); ?></title>
+		<title><?php wp_title( ' | ', true, 'right' ); ?><?php bloginfo( 'name' ); ?></title>
 		<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
 		<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
 		<?php wp_head(); ?>
