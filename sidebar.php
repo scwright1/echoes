@@ -1,4 +1,4 @@
-<aside id="sidebar" role="complementary">
+<!--<aside id="sidebar" role="complementary">
 <?php if ( is_active_sidebar( 'primary-widget-area' ) ) : ?>
 <div id="primary" class="widget-area">
 <ul class="xoxo">
@@ -6,4 +6,9 @@
 </ul>
 </div>
 <?php endif; ?>
-</aside>
+</aside> -->
+<div class='sidebar'>
+	<div class='sidebar-toggle'>
+		<i class='fa fa-bars'></i>
+	</div>
+</div>

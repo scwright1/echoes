@@ -1,9 +1,14 @@
 @import "definitions";
 
+html {
+	height: 100%;
+}
+
 body {
 	background: @col-smoke;
 	font-family: 'Alegreya Sans', sans-serif;
 	font-weight: normal;
+	height: 100%;
 }
 
 @media all and (max-width: 960px) {
@@ -181,6 +186,42 @@ p img {
 	text-transform: uppercase;
 	color: @col-black;
 	font-weight: 600;
+}
+
+/**
+ * sidebar
+ */
+
+.sidebar {
+	position: fixed;
+	z-index: 99;
+	background: @col-black;
+	width: 5px;
+	right: 0;
+	top: 0;
+	min-height: 101%;
+}
+
+.sidebar-toggle {
+	width: 60px;
+	height: 60px;
+	position: relative;
+	top: 100px;
+	margin-left: -55px;
+	background: @col-black;
+	transition: margin-left 0.5s ease;
+}
+
+.sidebar-toggle:hover {
+	margin-left: -60px;
+	transition: margin-left 0.5s ease;
+}
+
+.sidebar-toggle > i {
+	color: @col-smoke;
+	font-size: 32px;
+	text-align: center;
+	margin: 14px;
 }
 
 /**
