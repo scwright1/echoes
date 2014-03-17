@@ -45,7 +45,7 @@
 	</head>
 	<body>
 		<section class="container">
-			<a href=".">
+			<a href="http://alfandemilio.co.uk">
 				<div id="holding-logo">
 					ALF & EMILIO
 					<div class='not-found'>
