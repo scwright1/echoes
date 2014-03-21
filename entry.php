@@ -5,5 +5,8 @@
 </header>
 <?php get_template_part( 'entry', ( is_archive() || is_search() ? 'summary' : 'content' ) ); ?>
 <?php the_post_thumbnail();?>
+<a class='entry-comments' href="<?php comments_link(); ?>">
+	&rarr; Comments for this post
+</a>
 <div class='nav-separator'></div>
 </article>
